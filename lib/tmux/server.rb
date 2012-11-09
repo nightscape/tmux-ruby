@@ -110,6 +110,7 @@ module Tmux
       output.each_line do |session|
         params = session.match(/^(?<name>\w+?): (?<num_windows>\d+) windows \(created (?<creation_time>.+?)\) \[(?<width>\d+)x(?<height>\d+)\](?: \((?<attached>attached)\))?$/)
 
+        next unless params
         name          = params[:name]
         num_windows   = params[:num_windows].to_i
         creation_time = Date.parse(params[:creation_time])
