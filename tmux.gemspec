@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   ]
   #s.add_development_dependency "rcov", ">= 0"
   s.homepage = "http://github.com/dominikh/tmux"
-  s.licenses = ["BSD"]
+  s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
   s.summary = "Allow Ruby to interact with Tmux"
